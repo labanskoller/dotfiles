@@ -91,7 +91,7 @@ export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWCOLORHINTS=true
 export GIT_PS1_SHOWUPSTREAM=verbose
-export PROMPT_COMMAND='__git_ps1 "$Cyan┌ $BBlue$PathShort$Color_Off" "\n$Cyan└$Color_Off [\!] \u@\h \$ "'
+export PROMPT_COMMAND='__git_ps1 "$Cyan┌$Color_Off [\!] \u@\h\n$Cyan└$Color_Off $BBlue$PathShort$Color_Off" " \$ "'
 
 alias ..='cd ..'
 alias ...='cd ../..'
