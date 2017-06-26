@@ -87,6 +87,11 @@ PathFull="\W"
 NewLine="\n"
 Jobs="\j"
 
+if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]
+then
+  # Red Hat, CentOS and Fedora
+  source /usr/share/git-core/contrib/completion/git-prompt.sh
+fi
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWCOLORHINTS=true
