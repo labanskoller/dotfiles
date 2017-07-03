@@ -2,7 +2,7 @@
 set hlsearch incsearch
 set background=dark
 set encoding=utf-8
-set expandtab number
+set expandtab
 set nowritebackup noswapfile nobackup
 set ignorecase smartcase
 set et ts=4 sw=4 softtabstop=4
