@@ -104,3 +104,5 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 alias gitkj='gitk --branches=* --tags=* &'
+
+export PATH="${PATH}:~/bin"
