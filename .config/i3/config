@@ -202,3 +202,8 @@ bindsym $WORKSPACE+$MOVE+Left   move workspace to output left
 bindsym $WORKSPACE+$MOVE+Down   move workspace to output down
 bindsym $WORKSPACE+$MOVE+Up     move workspace to output up
 bindsym $WORKSPACE+$MOVE+Right  move workspace to output right
+
+# Media keys
+bindsym XF86AudioPlay           exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+bindsym XF86AudioNext           exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+bindsym XF86AudioPrev           exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
