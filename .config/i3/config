@@ -5,6 +5,12 @@
 # this file and re-run i3-config-wizard(1).
 #
 
+# Workspace names
+set $WS_1_NAME                  terms
+set $WS_2_NAME                  web
+set $WS_3_NAME                  teams
+set $WS_4_NAME                  spotify
+
 exec --no-startup-id xautolock -time 5 -locker i3lock
 exec --no-startup-id numlockx on
 exec --no-startup-id xsetroot -solid "#333333"
@@ -112,10 +118,10 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace number 1
-bindsym $mod+2 workspace number 2
-bindsym $mod+3 workspace number 3
-bindsym $mod+4 workspace number 4
+bindsym $mod+1 workspace number 1 $WS_1_NAME
+bindsym $mod+2 workspace number 2 $WS_2_NAME
+bindsym $mod+3 workspace number 3 $WS_3_NAME
+bindsym $mod+4 workspace number 4 $WS_4_NAME
 bindsym $mod+5 workspace number 5
 bindsym $mod+6 workspace number 6
 bindsym $mod+7 workspace number 7
@@ -124,10 +130,10 @@ bindsym $mod+9 workspace number 9
 bindsym $mod+0 workspace number 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace number 1
-bindsym $mod+Shift+2 move container to workspace number 2
-bindsym $mod+Shift+3 move container to workspace number 3
-bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+1 move container to workspace number 1 $WS_1_NAME
+bindsym $mod+Shift+2 move container to workspace number 2 $WS_2_NAME
+bindsym $mod+Shift+3 move container to workspace number 3 $WS_3_NAME
+bindsym $mod+Shift+4 move container to workspace number 4 $WS_4_NAME
 bindsym $mod+Shift+5 move container to workspace number 5
 bindsym $mod+Shift+6 move container to workspace number 6
 bindsym $mod+Shift+7 move container to workspace number 7
