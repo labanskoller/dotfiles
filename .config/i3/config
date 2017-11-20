@@ -16,6 +16,9 @@ exec --no-startup-id numlockx on
 exec --no-startup-id xsetroot -solid "#333333"
 exec --no-startup-id xrandr --output DP-2-3 --rotate left
 exec --no-startup-id nm-applet
+exec --no-startup-id ~/bin/monitor_setup.sh
+
+bindsym XF86Tools exec ~/bin/monitor_setup.sh
 
 # From Pierre
 #####################################################################
