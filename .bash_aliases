@@ -104,5 +104,8 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 alias gitkj='gitk --branches=* --tags=* &'
+alias s='git status'
+alias gd='git diff'
+alias gds='git diff --staged'
 
 export PATH="${PATH}:~/bin"
