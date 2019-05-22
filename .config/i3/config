@@ -218,3 +218,8 @@ bindsym $WORKSPACE+$MOVE+Right  move workspace to output right
 bindsym XF86AudioPlay           exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 bindsym XF86AudioNext           exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 bindsym XF86AudioPrev           exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+
+# Screenshot keys
+bindsym --release Print exec scrot "/tmp/screenshot.png" && xclip -selection clipboard -in "/tmp/screenshot.png" -target image/png && mv "/tmp/screenshot.png" "$HOME/Pictures/screenshot_$(date '+%F_%T%z')_screen.png"
+bindsym --release Ctrl+Print exec scrot --focused --border "/tmp/screenshot.png" && xclip -selection clipboard -in "/tmp/screenshot.png" -target image/png && mv "/tmp/screenshot.png" "$HOME/Pictures/screenshot_$(date '+%F_%T%z')_window.png"
+bindsym --release Shift+Print exec scrot --select "/tmp/screenshot.png" && xclip -selection clipboard -in "/tmp/screenshot.png" -target image/png && mv "/tmp/screenshot.png" "$HOME/Pictures/screenshot_$(date '+%F_%T%z')_region.png"
