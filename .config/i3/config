@@ -225,3 +225,5 @@ bindsym --release Ctrl+Print exec scrot --focused --border "/tmp/screenshot.png"
 bindsym --release Shift+Print exec scrot --select "/tmp/screenshot.png" && xclip -selection clipboard -in "/tmp/screenshot.png" -target image/png && mv "/tmp/screenshot.png" "$HOME/Pictures/screenshot_$(date '+%F_%H%M%S%z')_region.png"
 
 bindsym $mod+y exec "/usr/bin/ssh-add -e /usr/lib/x86_64-linux-gnu/opensc-pkcs11.so; ssh-add -s /usr/lib/x86_64-linux-gnu/opensc-pkcs11.so"
+
+for_window [title="Microsoft Teams Notification"] floating enable
