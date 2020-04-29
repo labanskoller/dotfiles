@@ -107,5 +107,6 @@ alias gitkj='gitk --branches=* --tags=* &'
 alias s='git status'
 alias gd='git diff'
 alias gds='git diff --staged'
+alias ssh-yubi="/usr/bin/ssh-add -e /usr/lib/x86_64-linux-gnu/opensc-pkcs11.so > /dev/null 2>&1; ssh-add -s /usr/lib/x86_64-linux-gnu/opensc-pkcs11.so"
 
 export PATH="${PATH}:~/bin"

@@ -223,3 +223,5 @@ bindsym XF86AudioPrev           exec dbus-send --type=method_call --dest=org.mpr
 bindsym --release Print exec scrot "/tmp/screenshot.png" && xclip -selection clipboard -in "/tmp/screenshot.png" -target image/png && mv "/tmp/screenshot.png" "$HOME/Pictures/screenshot_$(date '+%F_%H%M%S%z')_screen.png"
 bindsym --release Ctrl+Print exec scrot --focused --border "/tmp/screenshot.png" && xclip -selection clipboard -in "/tmp/screenshot.png" -target image/png && mv "/tmp/screenshot.png" "$HOME/Pictures/screenshot_$(date '+%F_%H%M%S%z')_window.png"
 bindsym --release Shift+Print exec scrot --select "/tmp/screenshot.png" && xclip -selection clipboard -in "/tmp/screenshot.png" -target image/png && mv "/tmp/screenshot.png" "$HOME/Pictures/screenshot_$(date '+%F_%H%M%S%z')_region.png"
+
+bindsym $mod+y exec "/usr/bin/ssh-add -e /usr/lib/x86_64-linux-gnu/opensc-pkcs11.so; ssh-add -s /usr/lib/x86_64-linux-gnu/opensc-pkcs11.so"
